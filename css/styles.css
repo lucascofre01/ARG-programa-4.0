@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto:wght@300;400&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+
+.header{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+}
+
+.header .logo{
+    cursor: pointer;
+}
+
+.header .logo img{
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.header .logo img:hover{
+    transform: scale(1.2);
+}
+
+.header .nav-links{
+    list-style: none;
+}
+
+.header .nav-links li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.header .nav-links a{
+    font-size: 700;
+    color: #000000;
+    text-decoration: none;
+}
+
+.header .nav-links li a:hover{
+    color: #ffbc0e
+}
+
+.header .btn button{
+    font-weight: 700;
+    color: #1b3039;
+    padding: 9px 25px;
+    background: #eceff1;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.header .btn button:hover{
+    background-color: #e2f1f8;
+    color: #ffbc0e;
+    transform: scale(1.1);
+}
+
+.container{
+    background-color: #ffff;
+}
+
+.info{
+    background-color: #00000059;
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: .75fr 1fr;
+    grid-template-areas: 
+            "foto titulo"
+            "foto texto"
+}
+
+.info img{
+    grid-area: foto;
+    height: 250px;
+    margin-left: 12rem;
+    border-radius: 50%;
+}
+
+.info h1{
+    margin-top: 1.5rem;
+    grid-area: titulo;
+    font-size: 2.5rem;
+    margin-left: 5rem;
+}
+
+.info p{
+    grid-area: texto;
+    margin-left: 6rem;
+}
+
+.biography{
+    display: grid;
+    grid-template-columns: .35fr 1fr;
+    grid-template-areas: 
+            "foto titulo"
+            "foto texto";
+    margin: 2rem 1rem;
+}
+
+.Biography-img{
+    grid-area: foto;
+    height: 300px;
+}
+
+.biography h2{
+    grid-area: titulo;
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    margin-top: 3rem;
+}
+
+.biography p{
+    grid-area: texto;
+}
+
+.skill{
+    display: grid;
+    grid-template-columns: .35fr 1fr;
+    grid-template-areas: 
+            "foto titulo"
+            "foto texto";
+    margin: 2rem 1rem;
+}
+
+.skill-img{
+    grid-area: foto;
+    height: 300px;
+}
+
+.skill h2{
+    grid-area: titulo;
+    grid-area: titulo;
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    margin-top: 3rem;
+}
+
+.skill p{
+    grid-area: texto;
+}
+
+.skill ul{
+    margin-left: 2rem;
+    margin-top: 2rem;
+    grid-area: texto;
+}
+
+.trabajos{
+    display: grid;
+    grid-template-columns: .35fr 1fr;
+    grid-template-areas: 
+            "foto titulo"
+            "foto texto";
+    margin: 2rem 1rem;
+}
+
+.trabajos-img{
+    grid-area: foto;
+    height: 300px;
+}
+
+.trabajos h2{
+    grid-area: titulo;
+    grid-area: titulo;
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    margin-top: 3rem;
+}
+
+.trabajos ul{
+    grid-area: texto;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    grid-area: texto;
+}
+
+.btn-footer{
+    font-weight: 700;
+    color: #1b3039;
+    padding: 9px 25px;
+    background: #eceff1;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.btn-footer:hover{
+    background-color: #e2f1f8;
+    color: #ffbc0e;
+    transform: scale(1.1);
+}
